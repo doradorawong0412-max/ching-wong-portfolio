@@ -365,6 +365,15 @@ a:not(:has(img)):hover, a:not(:has(img)):focus-visible,
 .termino-web > img { width: 100%; height: auto; display: block; }
 .termino-web-pair { margin-bottom: 0; }
 .termino-web-pair img { width: 100%; aspect-ratio: 1; object-fit: contain; background: transparent; display: block; }
+.termino-print-first { margin-bottom: clamp(7rem, 16vh, 12rem); }
+.termino-slideshow { width: 100%; }
+.termino-slides { position: relative; width: 100%; aspect-ratio: 16 / 10; overflow: hidden; background: #ecebe6; }
+.termino-slide { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; background: transparent; opacity: 0; visibility: hidden; transition: opacity .35s ease; cursor: pointer; }
+.termino-slide.is-active { opacity: 1; visibility: visible; }
+.termino-slide img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.termino-slideshow-controls { display: grid; grid-template-columns: 3rem 1fr 3rem; align-items: center; margin-top: 1rem; font: .75rem/1 var(--mono); text-align: center; }
+.termino-slideshow-controls button { height: 3rem; border: 1px solid currentColor; border-radius: 50%; background: transparent; font: inherit; cursor: pointer; }
+.termino-slideshow-controls button:hover, .termino-slideshow-controls button:focus-visible { background: var(--ink); color: var(--paper); }
 .termino-print { margin-bottom: clamp(7rem, 16vh, 12rem); }
 .termino-magazine { margin-bottom: clamp(7rem, 16vh, 12rem); }
 .termino-magazine img { width: 100%; aspect-ratio: 1; object-fit: contain; background: transparent; display: block; }
