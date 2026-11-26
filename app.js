@@ -1,4 +1,4 @@
-const BASE_PATH = location.hostname.endsWith('github.io') ? '/chingwongportfolioo' : ''
+const BASE_PATH = location.hostname.endsWith('github.io') ? '/ching-wong-portfolio' : ''
 
 const routes = {
   '/': home,
